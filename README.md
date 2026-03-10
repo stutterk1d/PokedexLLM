@@ -1,11 +1,18 @@
 # PokedexLLM
 
-This repository is a data science project for a chatbot specializing in Pokemon. You can find the code to retrieve factual data and generate answers about Pokémon here. I built an artificial intelligence pipeline using Llama 3.1 8B and a Chroma vector database to analyze different creatures. I also applied PEFT and LoRA to train the model efficiently. You can also run a Streamlit application to interact with the system.  Below is an example of the application.
+This repository is a data science project for a chatbot specializing in Pokemon. I built an LLM pipeline using Llama 3.1 8B and a Chroma vector database to analyze different Pokemon. I also applied PEFT and LoRA to train the model efficiently. You can also run a Streamlit application to interact with the system.  Below is an example of the application.
 
 https://github.com/user-attachments/assets/bdf0277a-f0a7-4df3-913c-0914fcde92b1
 
 ## Project Structure
 
+* **`chroma_db/`**: Contains the vector database files.
+* **`unsloth_compiled_cache/`**: Contains the compiled training scripts.
+* **`app.py`**: Runs the Streamlit application.
+* **`Pokedex_LLM_Finetuning_and_Cleaning.ipynb`**: Contains the data cleaning and model training notebook.
+* **`pokedex.csv`**: Contains the raw dataset.  You can find it [here](https://www.kaggle.com/datasets/hanicier/master-pokemon-dataset-with-corpus-version)
+* **`requirements.txt`**: Lists the software dependencies.
+* **`.gitignore`**: Ignores the language model due to file constraints
 
 ## PEFT and LoRA Implementation
 
@@ -20,7 +27,7 @@ I applied Low-Rank Adaptation (LoRA) to specific model modules. You can see my c
 
 ## Technologies Used
 
-You will mainly use these tools for this project:
+I mainly used these tools for this project:
 
 1. Python
 2. Unsloth
@@ -31,8 +38,12 @@ You will mainly use these tools for this project:
 
 ## How to Run the Code
 
+1. Clone the repository to your local system.
+2. Create a virtual environment and install the required packages.
+3. Run the `Pokedex_LLM_Finetuning_and_Cleaning.ipynb` file to build the database and model and place them into the repository
+5. Open your terminal, change to the project directory, and launch the Streamlit app using streamlit run app.py.
 
-## Data Details
+## Components
 
 I configured the system to manage hardware resources.
 
